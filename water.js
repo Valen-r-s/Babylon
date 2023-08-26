@@ -13,12 +13,12 @@ const createScene = function () {
 
     // Where the particles come from
     particleSystem.emitter = new BABYLON.Vector3(0, 0, 0); // the starting object, the emitter
-    particleSystem.minEmitBox = new BABYLON.Vector3(-1, 0, 0); // Starting all from
-    particleSystem.maxEmitBox = new BABYLON.Vector3(1, 0, 0); // To...
+    particleSystem.minEmitBox = new BABYLON.Vector3(0, 0, 0); // Starting all from
+    particleSystem.maxEmitBox = new BABYLON.Vector3(0, 0, 0); // To...
 
     // Colors of all particles
-    particleSystem.color1 = new BABYLON.Color4(0.7, 0.8, 1.0, 1.0);
-    particleSystem.color2 = new BABYLON.Color4(0, 0.75, 1);
+    particleSystem.color1 = new BABYLON.Color4(0, 1, 0.35);
+    particleSystem.color2 = new BABYLON.Color4(1, 0, 0.93);
     particleSystem.colorDead = new BABYLON.Color4(0, 0, 0.2, 0.0);
 
     // Size of each particle (random between...
@@ -39,8 +39,8 @@ const createScene = function () {
     particleSystem.gravity = new BABYLON.Vector3(0, -9.81, 0);
 
     // Direction of each particle after it has been emitted
-    particleSystem.direction1 = new BABYLON.Vector3(2, 1, 2);
-    particleSystem.direction2 = new BABYLON.Vector3(2, 8, -2);
+    particleSystem.direction1 = new BABYLON.Vector3(-2,3, 2);
+    particleSystem.direction2 = new BABYLON.Vector3(2, 3, -2);
 
     // Angular speed, in radians
     particleSystem.minAngularSpeed = 5;
@@ -48,7 +48,7 @@ const createScene = function () {
 
     // Speed
     particleSystem.minEmitPower = 1;
-    particleSystem.maxEmitPower = 3;
+    particleSystem.maxEmitPower = 8;
     particleSystem.updateSpeed = 0.025;
 
     // Start the particle system
