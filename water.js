@@ -39,11 +39,11 @@ const createScene = function () {
     particleSystem.gravity = new BABYLON.Vector3(0, -9.81, 0);
 
     // Direction of each particle after it has been emitted
-    particleSystem.direction1 = new BABYLON.Vector3(-2, 8, 2);
+    particleSystem.direction1 = new BABYLON.Vector3(2, 1, 2);
     particleSystem.direction2 = new BABYLON.Vector3(2, 8, -2);
 
     // Angular speed, in radians
-    particleSystem.minAngularSpeed = 0;
+    particleSystem.minAngularSpeed = 5;
     particleSystem.maxAngularSpeed = Math.PI;
 
     // Speed
