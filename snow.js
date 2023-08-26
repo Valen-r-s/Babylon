@@ -17,7 +17,7 @@ const createScene = function () {
 
     // Colors of all particles
     particleSystem.color1 = new BABYLON.Color4(1, 1, 1, 1);
-    particleSystem.colorDead = new BABYLON.Color4(0.7, 0.8, 1.0, 0.0);
+    particleSystem.colorDead = new BABYLON.Color4(0.05, 0.84, 0.99, 0);
 
     // Size of each particle (random between...
     particleSystem.minSize = 0.1;
