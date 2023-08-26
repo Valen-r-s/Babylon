@@ -22,12 +22,12 @@ const createScene = function () {
     particleSystem.colorDead = new BABYLON.Color4(0, 0, 0.2, 0.0);
 
     // Size of each particle (random between...
-    particleSystem.minSize = 0.1;
-    particleSystem.maxSize = 0.5;
+    particleSystem.minSize = 0.5;
+    particleSystem.maxSize = 1;
 
     // Life time of each particle (random between...
-    particleSystem.minLifeTime = 2;
-    particleSystem.maxLifeTime = 3.5;
+    particleSystem.minLifeTime = 1;
+    particleSystem.maxLifeTime = 5;
 
     // Emission rate
     particleSystem.emitRate = 1500;
