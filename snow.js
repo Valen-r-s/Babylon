@@ -13,7 +13,7 @@ const createScene = function () {
     // Where the particles come from
     particleSystem.emitter = new BABYLON.Vector3(0, 10, 0);
     particleSystem.minEmitBox = new BABYLON.Vector3(-20, 0, -20);
-    particleSystem.maxEmitBox = new BABYLON.Vector3(20, 0, 20);
+    particleSystem.maxEmitBox = new BABYLON.Vector3(50, 0, 50);
 
     // Colors of all particles
     particleSystem.color1 = new BABYLON.Color4(1, 1, 1, 1);
