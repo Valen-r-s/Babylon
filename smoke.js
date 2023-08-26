@@ -1,5 +1,4 @@
 //Particle system, smoke
-//Particle system, fire
 var createScene = function () {
     var scene = new BABYLON.Scene(engine);
 
