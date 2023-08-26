@@ -22,9 +22,9 @@ var createScene = function () {
 
     pipeline.bloomEnabled = true;
     pipeline.bloomThreshold = 0.8;
-    pipeline.bloomWeight = 1;
-    pipeline.bloomKernel = 100;
-    pipeline.bloomScale = 0.5;
+    pipeline.bloomWeight = 5;
+    pipeline.bloomKernel = 10;
+    pipeline.bloomScale = 5;
 
     BABYLON.ParticleHelper.CreateAsync("fire", scene).then((set) => {
         set.start();
