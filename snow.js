@@ -1,3 +1,4 @@
+//Particle system, snow
 const createScene = function () {
     const scene = new BABYLON.Scene(engine);
 
@@ -7,7 +8,7 @@ const createScene = function () {
     var particleSystem = new BABYLON.ParticleSystem("particles", 5000, scene);
 
     // Change particles texture
-    particleSystem.particleTexture = new BABYLON.Texture("textures/snowflake.png", scene);
+    particleSystem.particleTexture = new BABYLON.Texture("textures/flare.png", scene);
 
     // Where the particles come from
     particleSystem.emitter = new BABYLON.Vector3(0, 10, 0);
