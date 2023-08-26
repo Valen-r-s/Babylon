@@ -2,7 +2,7 @@
 const createScene = function () {
     const scene = new BABYLON.Scene(engine);
 
-    const camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 25, BABYLON.Vector3.Zero());
+    const camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 40, BABYLON.Vector3.Zero());
     camera.attachControl(canvas, true);
 
     var particleSystem = new BABYLON.ParticleSystem("particles", 5000, scene);
@@ -13,7 +13,7 @@ const createScene = function () {
     // Where the particles come from
     particleSystem.emitter = new BABYLON.Vector3(0, 10, 0);
     particleSystem.minEmitBox = new BABYLON.Vector3(-20, 0, -20);
-    particleSystem.maxEmitBox = new BABYLON.Vector3(50, 0, 50);
+    particleSystem.maxEmitBox = new BABYLON.Vector3(20, 0, 20);
 
     // Colors of all particles
     particleSystem.color1 = new BABYLON.Color4(1, 1, 1, 1);
@@ -21,14 +21,14 @@ const createScene = function () {
 
     // Size of each particle (random between...
     particleSystem.minSize = 0.1;
-    particleSystem.maxSize = 0.5;
+    particleSystem.maxSize = 1;
 
     // Life time of each particle (random between...
     particleSystem.minLifeTime = 1;
     particleSystem.maxLifeTime = 5;
 
     // Emission rate
-    particleSystem.emitRate = 200;
+    particleSystem.emitRate = 500;
 
     particleSystem.blendMode = BABYLON.ParticleSystem.BLENDMODE_ONEONE;
 
