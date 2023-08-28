@@ -104,6 +104,9 @@
           scene
         );
 
+        BABYLON.ParticleHelper.BaseAssetsUrl = "https://avilagab.github.io/CompuGraph/Codigo/SIM/";
+
+        
         BABYLON.ParticleHelper.CreateAsync("smoke", scene).then((set) => {
           set.start();
         });
