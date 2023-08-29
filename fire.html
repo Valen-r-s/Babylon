@@ -96,7 +96,7 @@
         scene.clearColor = new BABYLON.Color3(0.2, 0.2, 0.2);
 
         //Ground
-        var ground = BABYLON.Mesh.CreatePlane("ground", 500.0, scene);
+        var ground = BABYLON.Mesh.CreatePlane("ground", 10.0, scene);
         ground.position = new BABYLON.Vector3(0, 0, 0);
         ground.rotation = new BABYLON.Vector3(Math.PI / 2, 0, 0);
 
@@ -104,7 +104,7 @@
           "groundMat",
           scene
         );
-        groundMat.baseColor = new BABYLON.Color4(0.2, 0.2, 0.2, 1.0);
+        groundMat.baseColor = new BABYLON.Color4(0.2, 0.2, 0.5, 1.0);
         groundMat.metallic = 0;
         groundMat.roughness = 0.8;
         ground.material = groundMat;
