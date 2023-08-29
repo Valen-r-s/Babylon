@@ -66,9 +66,9 @@
 
         const camera = new BABYLON.ArcRotateCamera(
           "Camera",
+          Math.PI ,
           Math.PI / 2,
-          Math.PI / 2,
-          25,
+          20,
           BABYLON.Vector3.Zero()
         );
         camera.attachControl(canvas, true);
@@ -92,8 +92,8 @@
         particleSystem.maxEmitBox = new BABYLON.Vector3(0, 0, 0); // To...
 
         // Colors of all particles
-        particleSystem.color1 = new BABYLON.Color4(0, 0.7, 1);
-        particleSystem.color2 = new BABYLON.Color4(0.22, 0.23, 1);
+        particleSystem.color1 = new BABYLON.Color4(0, 3, 1);
+        particleSystem.color2 = new BABYLON.Color4(1, 0.23, 1);
         particleSystem.colorDead = new BABYLON.Color4(0, 0, 0.2, 0.0);
 
         // Size of each particle (random between...
