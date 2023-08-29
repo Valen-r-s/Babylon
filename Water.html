@@ -66,7 +66,7 @@
 
         const camera = new BABYLON.ArcRotateCamera(
           "Camera",
-          Math.PI ,
+          Math.PI,
           Math.PI / 2,
           20,
           BABYLON.Vector3.Zero()
@@ -81,10 +81,7 @@
         );
 
         //Texture of each particle
-        particleSystem.particleTexture = new BABYLON.Texture(
-          "drop.png",
-          scene
-        );
+        particleSystem.particleTexture = new BABYLON.Texture("drop.png", scene);
 
         // Where the particles come from
         particleSystem.emitter = new BABYLON.Vector3(0, 0, 0); // the starting object, the emitter
